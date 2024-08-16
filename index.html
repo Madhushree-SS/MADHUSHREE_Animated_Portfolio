@@ -52,10 +52,11 @@
                   position: relative;
                   height: 30px;
                   overflow: hidden;
-                  color: #000;
+                  color: #fff;
+                  font-size: 20px;
                   background-color: transparent;
               }
-              .text {
+              .txt {
                   position: absolute;
                   margin: 0px 0;
                   padding: 0;
@@ -67,8 +68,8 @@
 
         </div><div class="cnt">
           <div class="grp">
-              <p class="text">
-                  🌟 Ready for Some Magic ? Move/Click Your Cursor and Watch the  Particle Fly!"
+              <p class="txt">
+                  🌟 Ready  for  Some  Magic  ?  Move/ Click  Your  Cursor  and  Watch  the  Particle  Fly ! 
               </p>
           </div>
       </div>  
@@ -712,7 +713,7 @@
     var style = document.createElement('style');
     var position = 'right';
 
-    var textWidth = document.querySelector('.text').offsetWidth + 10;
+    var textWidth = document.querySelector('.txt').offsetWidth + 10;
 
     style.innerHTML = `
         @keyframes my-animation {
@@ -724,7 +725,7 @@
     document.head.append(style);
 
     // Apply the animation to the element
-    document.querySelector('.text').style.animation = 'my-animation 18s linear infinite';
+    document.querySelector('.txt').style.animation = 'my-animation 18s linear infinite';
 </script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
