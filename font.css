@@ -154,7 +154,7 @@
           }
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 450px) {
           .top-skills-icons {
             justify-content: center;
             font-size: 0.7em;
@@ -277,7 +277,7 @@
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     .about-section {
       padding: 1em 0;
       height: 550px;
@@ -987,7 +987,7 @@
           margin-bottom: 0.8em;
         }
       }
-      @media (max-width: 350px) {
+      @media (max-width: 450px) {
         .testimonial-title {
           font-size: 1.25em;
           border: none;
@@ -1364,7 +1364,7 @@
         margin-top: 0.75em;
       }
     }
-    @media (max-width: 400px) {
+    @media (max-width: 450px) {
       .main-section .hero-section .about-section .about-me .about-me-text .top-skills-icons {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -1488,7 +1488,7 @@
         width: 90% !important;
       }
     }
-    @media (max-width: 400px) {
+    @media (max-width: 450px) {
       .main-section .hero-section .about-section {
         padding: 1em 0;
       }
@@ -1499,12 +1499,12 @@
       left: 50%;
       pointer-events: all;
     }
-    @media (max-width: 400px) {
+    @media (max-width: 450px) {
       .main-section .hero-section .about-section {
         padding: 1em 0;
       }
     }
-    @media (max-width: 400px){
+    @media (max-width: 450px){
     .contact-section .contact-form .contact-img svg {
    
       max-width: 330px;
@@ -1529,7 +1529,7 @@
   }
 
 
-  @media (max-width: 400px){
+  @media (max-width: 450px){
     .container{
       width: 400px;
     }
