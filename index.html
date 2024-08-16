@@ -47,15 +47,36 @@
                         </path>
                     </svg></a>
             </div>
-
+            <style>
+              .grp {
+                  position: relative;
+                  height: 30px;
+                  overflow: hidden;
+                  color: #000;
+                  background-color: transparent;
+              }
+              .text {
+                  position: absolute;
+                  margin: 0px 0;
+                  padding: 0;
+                  width: max-content;
+              }
+          </style>
         </header>
         <div class="absolute inset-0" id="wrapper-canvas">
 
-        </div>
+        </div><div class="cnt">
+          <div class="grp">
+              <p class="text">
+                  🌟 Ready for Some Magic ? Move/Click Your Cursor and Watch the  Particle Fly!"
+              </p>
+          </div>
+      </div>  
         <div class="flex -mt-10 relative ">
             <div class="w-full px-4 max-w-screen-xl mx-auto">
                 <img class="pointer-events-none h-auto w-[270px] sm:w-[370px] md:w-[550px] opacity-20 absolute top-0 left-1/2 -translate-y-1/3 -translate-x-1/2 "
                     src="part-1-starter-files/assets/images/M-logo.png" alt="">
+                     
                 <div class="relative ml-6 md:ml-16">
 
                     <h1
@@ -687,6 +708,24 @@
 
   </ul>
   </footer>
+  <script>
+    var style = document.createElement('style');
+    var position = 'right';
+
+    var textWidth = document.querySelector('.text').offsetWidth + 10;
+
+    style.innerHTML = `
+        @keyframes my-animation {
+            0% {${position}: -${textWidth}px;}
+            100% {${position}: 100%;}
+        }
+    `;
+
+    document.head.append(style);
+
+    // Apply the animation to the element
+    document.querySelector('.text').style.animation = 'my-animation 18s linear infinite';
+</script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
