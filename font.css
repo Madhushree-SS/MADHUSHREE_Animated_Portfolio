@@ -280,7 +280,13 @@
   @media (max-width: 400px) {
     .about-section {
       padding: 1em 0;
+      height: 550px;
+        width: 330px;
+        font-size: 14px;
+     
+        position: absolute;
     }
+    
   }
 
   .about-section.active {
@@ -639,6 +645,7 @@
     }
 
     h3 {
+      margin-top: 1em;
       font-size: 2em;
       margin-bottom: 0.2em;
     }
@@ -1032,7 +1039,7 @@
           width: 100%;
           text-align: center;
     
-          img {
+          svg {
             width: 100%;
             max-width: 700px;
           }
@@ -1338,4 +1345,228 @@
         transform: scale(1.1) translate3d(0em, 0, 0);
       }
     }
+    @media (max-width: 1000px) {
+      .main-section .hero-section .about-section .about-me .about-me-text .top-skills-icons {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+      }
+      .main-section .hero-section .about-section .about-me .about-me-text .about-me-title,
+    .main-section .hero-section .about-section .about-me .about-me-text .mern {
+        text-align: center;
+      }
+      .main-section .hero-section .about-section .about-me .about-me-text .about-me-detail {
+        width: 90%;
+        margin: 0 auto;
+        text-align: justify;
+      }
+      .main-section .hero-section .about-section .about-me .about-me-text .about-me-detail + .about-me-detail {
+        margin-top: 0.75em;
+      }
+    }
+    @media (max-width: 400px) {
+      .main-section .hero-section .about-section .about-me .about-me-text .top-skills-icons {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        font-size: 0.7em;
+      }
+      .main-section .hero-section .about-section .about-me .about-me-text .top-skills-icons svg {
+        width: 35px;
+        height: 35px;
+      }
+      .main-section .hero-section .about-section .about-me .about-me-text .about-me-title,
+    .main-section .hero-section .about-section .about-me .about-me-text .mern {
+        text-align: center;
+      }
+      .main-section .hero-section .about-section .about-me .about-me-text .mern {
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+      }
+      .main-section .hero-section .about-section .about-me .about-me-text .about-me-detail {
+        width: 90%;
+        margin: 0 auto;
+        text-align: justify;
+      }
+    }
+    .main-section .hero-section .about-section .about-me .about-me-text .top-skills-icons div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      cursor: context-menu;
+    }
+    .main-section .hero-section .about-section .about-me .about-me-text .top-skills-icons div .tooltip {
+      background-color: #8cc84b;
+      color: var(--dark);
+      padding: 0.5em 1.25em;
+      font-weight: 600;
+      border-radius: 50px;
+      position: absolute;
+      margin-bottom: 2em;
+      top: -1.25em;
+      -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+              box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      pointer-events: none;
+      -webkit-transition: top 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition: top 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .main-section .hero-section .about-section .about-me .about-me-text .top-skills-icons div .tooltip::after {
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: inherit;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      position: absolute;
+      bottom: -6px;
+    }
+    .main-section .hero-section .about-section .about-me .about-me-text .top-skills-icons div:hover .tooltip {
+      opacity: 1;
+      top: -3.25em;
+    }
+    .main-section .hero-section .about-section .about-me .about-me-text .top-skills-icons div + div {
+      margin-left: 2em;
+    }
+    @media (max-width: 370px) {
+      .main-section .hero-section .about-section .about-me {
+        zoom: 90%;
+      }
+    }
+    @media (max-width: 330px) {
+      .main-section .hero-section .about-section .about-me {
+        zoom: 85%;
+      }
+    }
+    .main-section .hero-section .about-section .illustration {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: center;
+    }
+    .main-section .hero-section .about-section .illustration .coder-img {
+      width: 100%;
+    }
+    @media (max-width: 1000px) {
+      .main-section .hero-section .about-section .illustration .coder-img {
+        width: 60%;
+        min-width: 270px;
+      }
+    }
+    @media (max-width: 760px) {
+      .main-section .hero-section .about-section .illustration {
+        display: none;
+      }
+    }
+    @media (max-width: 1000px) {
+      .main-section .hero-section .about-section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: 80vh;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        padding: 2em 0;
+      }
+      .main-section .hero-section .about-me-text {
+        width: 90% !important;
+      }
+    }
+    @media (max-width: 400px) {
+      .main-section .hero-section .about-section {
+        padding: 1em 0;
+      }
+    }
+    .main-section .hero-section .about-section.active {
+      -webkit-transform: translate(-50%, -50%) scale(1);
+              transform: translate(-50%, -50%) scale(1);
+      left: 50%;
+      pointer-events: all;
+    }
+    @media (max-width: 400px) {
+      .main-section .hero-section .about-section {
+        padding: 1em 0;
+      }
+    }
+    @media (max-width: 400px){
+    .contact-section .contact-form .contact-img svg {
+   
+      max-width: 330px;
+      margin-top: -135px;
+      margin-bottom: -120px;
+     
+    }
+    .contact-section {
+      background-color: #fff;
     
+    }
+    .contact input{
+      color: #000000;
+
+    }
+    .contact textarea{
+      color: #000000;
+    }
+    .contact label{
+      color: #000000;
+    }
+  }
+
+
+  @media (max-width: 400px){
+    .container{
+      width: 400px;
+    }
+    .container img{
+      width: 400px;
+      height: 200px;
+    }
+    .middle .text{
+      width: 300px;
+      height: 170px;
+      font-size: 10px;
+    }
+    .swiper-button-next{
+      color: transparent;
+    }
+    .swiper-button-prev{
+      color: transparent;
+    }
+    .swiper-pagination{
+      color: transparent;
+    }
+    .autoplay-progress{
+      color: transparent;
+    }
+    .swiper-slide{
+      height: 35%px;
+    }
+.swiper{
+  background-color: #fff;
+  width:359px;
+  height: 230px;
+}
+.testimonial-section{
+  background-color: #fff;
+}
+.testimonial-title{
+  border: #1788ae;
+  border-radius: 20px;
+}
+  }
